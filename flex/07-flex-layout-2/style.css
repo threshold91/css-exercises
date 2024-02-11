@@ -27,3 +27,46 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* my solution */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+.sidebar ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 8px;
+}
+
+
+.main-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 16px;
+}
+
+.card{
+  padding: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+.sidebar{
+  padding: 16px;
+  flex: 0 0 200px;
+}
