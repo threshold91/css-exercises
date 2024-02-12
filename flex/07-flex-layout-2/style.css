@@ -37,36 +37,57 @@ body {
 
 a{
   text-decoration: none;
+  color: #eee;
+  font-size: 24px;
 }
 .sidebar ul{
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  gap: 8px;
+  gap: 24px;
 }
 
 
 .main-container{
   display: flex;
   justify-content: space-between;
+  min-height: 100vh;
+
 }
 
 .content{
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
-  gap: 16px;
+  flex: 1; /* can grow & shrink, doesn't have max width value*/
+  align-content: flex-start ;
+  gap: 32px 32px;
+  
 }
 
 .card{
   padding: 8px;
   width: 300px;
   height: 300px;
+  border-radius: 8px;
 }
 
 .sidebar{
   padding: 16px;
-  flex: 0 0 200px;
+  flex: 0 0 300px; /* cannot grow & shrink, has max width of 300px */
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  font-size: 32px;
+  font-weight: 900;
 }
